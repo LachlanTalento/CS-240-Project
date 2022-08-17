@@ -45,10 +45,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Makes sure it only shows when selected
         if(savedInstanceState == null) {
+
             // Displays Scanner Activity on startup
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new ScannerFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_scanner);
+
         }
     }
 
